@@ -3,6 +3,10 @@
   "version": "1.0.4",
   "description": "answer hub plugin for hain",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talarari/hain-plugin-answerhub"
+  },
   "keywords": [
     "hain-0.3.0"
   ],
