@@ -1,0 +1,30 @@
+{
+  "name": "hain-plugin-answerhub",
+  "version": "1.0.4",
+  "description": "answer hub plugin for hain",
+  "main": "./lib/index.js",
+  "keywords": [
+    "hain-0.3.0"
+  ],
+  "author": "talarari",
+  "license": "MIT",
+  "hain": {
+    "prefix": "/ah ",
+    "usage": "/ah search term",
+    "icon": "#fa fa-google",
+    "redirect": "/ah"
+  },
+  "dependencies": {
+    "Base64": "^0.3.0",
+    "base-64": "^0.1.0",
+    "node-fetch": "^1.5.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "scripts": {
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "npm run compile"
+  }
+}

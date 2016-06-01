@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "title": "AnswerHub User Name"
+    },
+    "password": {
+      "type": "string",
+      "title": "AnswerHub Password"
+    },
+    "answerHubBaseUrl": {
+      "type": "string",
+      "title": "AnswerHub Base Url"
+    }
+
+  }
+}
