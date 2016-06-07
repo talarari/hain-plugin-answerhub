@@ -110,7 +110,12 @@ module.exports = (pluginContext) => {
     const renderPreview =(id, payload, render)=> {
         if (!payload.bestAnswer) return;
 
-        render(`<html><body>${payload.bestAnswer.bodyAsHTML}</body></html>`)
+        render(`<html>
+            <head>
+            <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+            </head>
+            <body>${payload.bestAnswer.bodyAsHTML.replace(new RegExp('<pre', 'g'), "<pre class='prettyprint'")}</body>
+            </html>`)
     };
 
     return { startup,search, execute,renderPreview }
