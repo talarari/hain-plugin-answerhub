@@ -1,6 +1,6 @@
 {
   "name": "hain-plugin-answerhub",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "answer hub plugin for hain",
   "main": "./lib/index.js",
   "repository": {
