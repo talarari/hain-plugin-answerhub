@@ -101,6 +101,8 @@ module.exports = (pluginContext) => {
                 if (!payload || !payload.id|| !payload.title) return;
                 const url = getQuestionUrl(payload.id,payload.title);
                 shell.openExternal(url);
+				app.close();
+
                 break;
             }
 
