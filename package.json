@@ -1,6 +1,6 @@
 {
   "name": "hain-plugin-answerhub",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "answer hub plugin for hain",
   "main": "./lib/index.js",
   "repository": {
@@ -13,10 +13,10 @@
   "author": "talarari",
   "license": "MIT",
   "hain": {
-    "prefix": "/ah ",
-    "usage": "/ah search term",
-    "icon": "#fa fa-google",
-    "redirect": "/ah"
+    "prefix": "/answerhub ",
+    "usage": "/answerhub search term",
+    "icon": "./icon.png",
+    "redirect": "/answerhub"
   },
   "dependencies": {
     "Base64": "^0.3.0",

@@ -85,7 +85,7 @@ module.exports = (pluginContext) => {
                     title: "Oops, could'nt get your results",
                     desc: "Make sure plugin preferences are correct, Click here to check",
                     icon :"#fa fa-exclamation-circle",
-                    action: 'prefs'
+                    payload:{action:'prefs'}
                 });
             });
     };
